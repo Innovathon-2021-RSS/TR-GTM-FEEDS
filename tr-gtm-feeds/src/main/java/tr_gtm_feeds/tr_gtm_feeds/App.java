@@ -22,6 +22,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Logger;
 import javax.swing.*;
+import javax.swing.text.DefaultEditorKit;
 
 import org.apache.commons.lang.StringEscapeUtils;
 import org.jdom.input.JDOMParseException;
@@ -163,6 +164,13 @@ public class App extends JFrame{
 
 
 		  this.getContentPane().add(tab);
+		  
+		  JPopupMenu menu = new JPopupMenu();
+		  Action copy = new DefaultEditorKit.CopyAction();
+		  copy.putValue(Action.NAME, "Copy");
+		  copy.putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke("control C"));
+		  menu.add(copy);
+		  
 
 	     editorPane.setContentType("text/html");
 	     scrollPane.setColumnHeaderView(btnReload_Export);
@@ -330,6 +338,13 @@ public class App extends JFrame{
 		    	    	btnReload_TR.setBackground(new Color(255, 140, 0));
 		    	    }
 		    	});
+	     
+	     editorPane.setComponentPopupMenu(menu);
+	     editorPane2.setComponentPopupMenu(menu);
+	     editorPane3.setComponentPopupMenu(menu);
+	     editorPane4.setComponentPopupMenu(menu);
+	     editorPane5.setComponentPopupMenu(menu);
+	     editorPane6.setComponentPopupMenu(menu);
 
 	   }
 
