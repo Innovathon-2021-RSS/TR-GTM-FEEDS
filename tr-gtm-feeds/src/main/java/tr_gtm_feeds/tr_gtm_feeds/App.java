@@ -1,18 +1,15 @@
 package tr_gtm_feeds.tr_gtm_feeds;
 
-import static tr_gtm_feeds.tr_gtm_feeds.App.editorPane;
-import static tr_gtm_feeds.tr_gtm_feeds.App.process;
-
-import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,20 +18,25 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Logger;
-import javax.swing.*;
+
+import javax.swing.Action;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JEditorPane;
+import javax.swing.JFrame;
+import javax.swing.JPopupMenu;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+import javax.swing.KeyStroke;
 import javax.swing.text.DefaultEditorKit;
 
 import org.apache.commons.lang.StringEscapeUtils;
-import org.jdom.input.JDOMParseException;
 
 import com.sun.syndication.feed.synd.SyndContent;
 import com.sun.syndication.feed.synd.SyndEntry;
 import com.sun.syndication.feed.synd.SyndFeed;
 import com.sun.syndication.io.FeedException;
-import com.sun.syndication.io.ParsingFeedException;
 import com.sun.syndication.io.SyndFeedInput;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 /** ***/
 
@@ -120,8 +122,7 @@ public class App extends JFrame{
 					//System.out.println("Description: " + StringEscapeUtils.unescapeHtml(entry.getDescription().getValue()));
 				}
 				//
-				texto_completo = texto_completo +  "\n" + "<span style=\"color:orange\"><a href=\"url\" id=\"texto\">" + entry.getLink() + "</a></span><a onclick=\"copiarTexto()\" style=\"color:blue\">Copiar</a> <br /><br />";
-				
+				texto_completo = texto_completo + "\n" + "<span style=\"color:orange\"><a href=\"url\" id=\"texto\">" + entry.getLink() + "</a></span><br /><br />";
 				
 				
 				//Colocação do botao em html
@@ -178,8 +179,8 @@ public class App extends JFrame{
 	     btnReload_Export.setMinimumSize(new Dimension(50, 23));
 	     btnReload_Export.setMaximumSize(new Dimension(50, 23));
 	     btnReload_Export.setIconTextGap(15);
-	     btnReload_Export.setSelectedIcon(new ImageIcon("C:\\FontesGIT\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
-	     btnReload_Export.setIcon(new ImageIcon("C:\\FontesGIT\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_Export.setSelectedIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDSu\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_Export.setIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
 	     btnReload_Export.setFont(new Font("Bahnschrift", Font.BOLD, 13));
 	     btnReload_Export.setForeground(Color.WHITE);
 	     btnReload_Export.setBackground(new Color(255, 140, 0));
@@ -220,8 +221,8 @@ public class App extends JFrame{
 	     btnReload_Import.setMinimumSize(new Dimension(50, 23));
 	     btnReload_Import.setMaximumSize(new Dimension(50, 23));
 	     btnReload_Import.setIconTextGap(15);
-	     btnReload_Import.setSelectedIcon(new ImageIcon("C:\\FontesGIT\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
-	     btnReload_Import.setIcon(new ImageIcon("C:\\FontesGIT\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_Import.setSelectedIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_Import.setIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
 	     btnReload_Import.setFont(new Font("Bahnschrift", Font.BOLD, 13));
 	     btnReload_Import.setForeground(Color.WHITE);
 	     btnReload_Import.setBackground(new Color(255, 140, 0));
@@ -262,8 +263,8 @@ public class App extends JFrame{
 	     btnReload_System.setMinimumSize(new Dimension(50, 23));
 	     btnReload_System.setMaximumSize(new Dimension(50, 23));
 	     btnReload_System.setIconTextGap(15);
-	     btnReload_System.setSelectedIcon(new ImageIcon("C:\\FontesGIT\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
-	     btnReload_System.setIcon(new ImageIcon("C:\\FontesGIT\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_System.setSelectedIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_System.setIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
 	     btnReload_System.setFont(new Font("Bahnschrift", Font.BOLD, 13));
 	     btnReload_System.setForeground(Color.WHITE);
 	     btnReload_System.setBackground(new Color(255, 140, 0));
@@ -303,8 +304,8 @@ public class App extends JFrame{
 	     btnReload_TR.setMinimumSize(new Dimension(50, 23));
 	     btnReload_TR.setMaximumSize(new Dimension(50, 23));
 	     btnReload_TR.setIconTextGap(15);
-	     btnReload_TR.setSelectedIcon(new ImageIcon("C:\\FontesGIT\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
-	     btnReload_TR.setIcon(new ImageIcon("C:\\FontesGIT\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_TR.setSelectedIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_TR.setIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
 	     btnReload_TR.setFont(new Font("Bahnschrift", Font.BOLD, 13));
 	     btnReload_TR.setForeground(Color.WHITE);
 	     btnReload_TR.setBackground(new Color(255, 140, 0));
