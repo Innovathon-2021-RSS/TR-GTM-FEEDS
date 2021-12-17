@@ -179,8 +179,8 @@ public class App extends JFrame{
 	     btnReload_Export.setMinimumSize(new Dimension(50, 23));
 	     btnReload_Export.setMaximumSize(new Dimension(50, 23));
 	     btnReload_Export.setIconTextGap(15);
-	     btnReload_Export.setSelectedIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDSu\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
-	     btnReload_Export.setIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_Export.setSelectedIcon(new ImageIcon(""));
+	     btnReload_Export.setIcon(new ImageIcon("GTM_Feeds/Charts-30_1-color (1).png"));
 	     btnReload_Export.setFont(new Font("Bahnschrift", Font.BOLD, 13));
 	     btnReload_Export.setForeground(Color.WHITE);
 	     btnReload_Export.setBackground(new Color(255, 140, 0));
@@ -221,8 +221,8 @@ public class App extends JFrame{
 	     btnReload_Import.setMinimumSize(new Dimension(50, 23));
 	     btnReload_Import.setMaximumSize(new Dimension(50, 23));
 	     btnReload_Import.setIconTextGap(15);
-	     btnReload_Import.setSelectedIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
-	     btnReload_Import.setIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_Import.setSelectedIcon(new ImageIcon("GTM_Feeds/Charts-30_1-color (1).png"));
+	     btnReload_Import.setIcon(new ImageIcon("GTM_Feeds/Charts-30_1-color (1).png"));
 	     btnReload_Import.setFont(new Font("Bahnschrift", Font.BOLD, 13));
 	     btnReload_Import.setForeground(Color.WHITE);
 	     btnReload_Import.setBackground(new Color(255, 140, 0));
@@ -263,8 +263,8 @@ public class App extends JFrame{
 	     btnReload_System.setMinimumSize(new Dimension(50, 23));
 	     btnReload_System.setMaximumSize(new Dimension(50, 23));
 	     btnReload_System.setIconTextGap(15);
-	     btnReload_System.setSelectedIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
-	     btnReload_System.setIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_System.setSelectedIcon(new ImageIcon("GTM_Feeds/Charts-30_1-color (1).png"));
+	     btnReload_System.setIcon(new ImageIcon("GTM_Feeds/Charts-30_1-color (1).png"));
 	     btnReload_System.setFont(new Font("Bahnschrift", Font.BOLD, 13));
 	     btnReload_System.setForeground(Color.WHITE);
 	     btnReload_System.setBackground(new Color(255, 140, 0));
@@ -304,8 +304,8 @@ public class App extends JFrame{
 	     btnReload_TR.setMinimumSize(new Dimension(50, 23));
 	     btnReload_TR.setMaximumSize(new Dimension(50, 23));
 	     btnReload_TR.setIconTextGap(15);
-	     btnReload_TR.setSelectedIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
-	     btnReload_TR.setIcon(new ImageIcon("C:\\INNOVATHON\\TR-GTM-FEEDS\\tr-gtm-feeds\\GTM_Feeds\\Charts-30_1-color (1).png"));
+	     btnReload_TR.setSelectedIcon(new ImageIcon("GTM_Feeds/Charts-30_1-color (1).png"));
+	     btnReload_TR.setIcon(new ImageIcon("GTM_Feeds/Charts-30_1-color (1).png"));
 	     btnReload_TR.setFont(new Font("Bahnschrift", Font.BOLD, 13));
 	     btnReload_TR.setForeground(Color.WHITE);
 	     btnReload_TR.setBackground(new Color(255, 140, 0));
