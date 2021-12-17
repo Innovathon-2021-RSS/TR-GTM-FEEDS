@@ -168,7 +168,7 @@ public class App extends JFrame{
 		  
 		  JPopupMenu menu = new JPopupMenu();
 		  Action copy = new DefaultEditorKit.CopyAction();
-		  copy.putValue(Action.NAME, "Copy");
+		  copy.putValue(Action.NAME, "Copiar");
 		  copy.putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke("control C"));
 		  menu.add(copy);
 		  
